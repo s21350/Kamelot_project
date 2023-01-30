@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Камелот"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_popup.htm',{})
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section id="main" class="main">
+				<div class="main__container">
+					<div class="main__content">
+						<h1 class="main__content-title"><span>Отримай свою персональну знижку.</span><br>
+							Зв’яжіться з нами і ми підберемо найкращу ціну для Вас
+						</h1>
+						<button data-popup="#popup" class="main__content-button button">Зателефонувати
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- <section class="about-us">
+
+				<div class="about-us__container">
+					<div class="about-us__body">
+						<div class="about-us__image-block img">
+							<img class="about-us__logo-img" src="@img/logo2.png" alt="">
+							<div class="img__column-left">
+								<div class="img__top-left"></div>
+								<div class="img__bottom-left"></div>
+							</div>
+							<div class="img__column-right">
+								<div class="img__top-right"></div>
+								<div class="img__bottom-right"></div>
+							</div>
+						</div>
+						<div class="about-us__content-block">
+							<h2 class="about-us__title title">Про нас</h2>
+							<h2 class="about-us__sub-title sub-title">Lorem ipsum dolor sit amet.</h2>
+							<div class="about-us__text">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, aperiam quos tempora
+								soluta
+								dolorum inventore optio eos velit neque omnis provident impedit. Aut consectetur saepe ducimus
+								nemo
+								aliquid optio repellat.
+							</div>
+							<div class="about-us__progress">
+								<ul class="about-us__list">
+									<li class="about-us__list-item">1. Lorem ipsum dolor sit.</li>
+									<li class="about-us__list-item">2. Lorem ipsum dolor sit.</li>
+									<li class="about-us__list-item">3. Lorem ipsum dolor sit.</li>
+									<li class="about-us__list-item">4. Lorem ipsum dolor sit.</li>
+								</ul>
+								<div class="about-us__img">
+									<img src="../img/img01.jpeg" alt="img">
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section> -->
+			<section class="progress">
+				<div class="progress__container">
+					<div class="progress__body">
+						<div class="progress__card">
+							<img src="@img/icon2.png" alt="icon">
+							<div class="progress__content">
+								<div data-watch data-watch-once class="progress__number">
+									<span data-digits-counter class="progress__num">20 років</span>
+									<span class="progress__icon">років</span>
+								</div>
+								<span class="progress__text">На ринку буд матеріалів</span>
+							</div>
+						</div>
+						<div class="progress__card">
+							<img src="@img/experience.png" alt="icon">
+							<div class="progress__content">
+								<div data-watch data-watch-once class="progress__number">
+									<span data-digits-counter class="progress__num">30000</span>
+									<span class="progress__icon">+</span>
+								</div>
+								<span class="progress__text">Задоволених клієнтів
+
+								</span>
+							</div>
+						</div>
+						<div class="progress__card">
+							<img src="@img/certificate.png" alt="icon">
+							<div class="progress__content">
+								<div data-watch data-watch-once class="progress__number">
+									<span>До</span><span data-digits-counter class="progress__num"> 50
+									</span>
+									<span class="progress__icon">років</span>
+								</div>
+								<span class="progress__text">Гарантії</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="service">
+				<div class="service__container">
+					<h2 class="service__title title">Наші послуги</h2>
+					<h2 class="service__sub-title sub-title">мають широкий спектр</h2>
+					<div class="service__card-block">
+						<div class="service-card">
+							<div class="service-card__line-top"></div>
+							<div class="service-card__line-bottom"></div>
+							<div class="service-card__line-left"></div>
+							<div class="service-card__line-right"></div>
+							<div class="service-card__icon">
+								<img src="@img/shopping-cart.png" alt="icon">
+							</div>
+							<h3 class="service-card__title">Роздрібна торгівля</h3>
+							<div class="service-card__text">Все що потрібно для приватного будинку та подвір’я можна
+								переглянути тут </div>
+							<a href="catalog.html" class="service-card__button button">До каталогу</a>
+						</div>
+						<div class="service-card">
+							<div class="service-card__line-top"></div>
+							<div class="service-card__line-bottom"></div>
+							<div class="service-card__line-left"></div>
+							<div class="service-card__line-right"></div>
+							<div class="service-card__icon">
+								<img src="@img/wholesale.png" alt="icon">
+							</div>
+							<h3 class="service-card__title">Гуртова торгівля</h3>
+							<div class="service-card__text">Для співпраці з гуртовими клієнтами та майстрами доступні всі
+								товари, що зазначені у каталозі та навіть більше.</div>
+							<a href="tel:0668150989 " class="service-card__button button">Зателефонувати</a>
+						</div>
+						<div class="service-card">
+							<div class="service-card__line-top"></div>
+							<div class="service-card__line-bottom"></div>
+							<div class="service-card__line-left"></div>
+							<div class="service-card__line-right"></div>
+							<div class="service-card__icon">
+								<img src="@img/factory.png" alt="icon">
+							</div>
+							<h3 class="service-card__title">Власне виробництво </h3>
+							<div class="service-card__text">Огорожі з ламелей та сухопресована цегла, що складається в замок
+								доступна у роздріб та гуртом.</div>
+							<a href="tel:0668150989 " class="service-card__button button">Зателефонувати</a>
+						</div>
+						<div class="service-card">
+							<div class="service-card__line-top"></div>
+							<div class="service-card__line-bottom"></div>
+							<div class="service-card__line-left"></div>
+							<div class="service-card__line-right"></div>
+							<div class="service-card__icon">
+								<img src="@img/builder.png" alt="icon">
+							</div>
+							<h3 class="service-card__title">Бригада майстрів</h3>
+							<div class="service-card__text">Допоможуть в монтуванні будь-яких товарів з нашого каталогу </div>
+							<button data-popup="#popup" class="service-card__button button">Зателефонувати</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="why-us">
+				<div class="why-us__container">
+					<div class="why-us__body">
+						<div class="why-us__content">
+							<h2 class="why-us__title title">Чому обирають нас</h2>
+							<h2 class="why-us__sub-title sub-title">наші клієнти протягом всього часу</h2>
+							<div class="why-us__wrapper-content">
+								<div class="why-us__benefits our-benefits">
+									<div class="our-benefits__body">
+										<div class="our-benefits__mark _icon-arrow"></div>
+										<div class="our-benefits__content benefits-content">
+											<div class="benefits-content__title">Виробники з усього світу в одному місці
+											</div>
+										</div>
+									</div>
+									<div class="our-benefits__body">
+										<div class="our-benefits__mark _icon-arrow"></div>
+										<div class="our-benefits__content benefits-content">
+											<div class="benefits-content__title">Широкий асортимент кожного виду
+											</div>
+										</div>
+									</div>
+									<div class="our-benefits__body">
+										<div class="our-benefits__mark _icon-arrow"></div>
+										<div class="our-benefits__content benefits-content">
+											<div class="benefits-content__title">Працюємо тільки з компаніями, перевіреними часом
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="why-us__benefits our-benefits">
+									<div class="our-benefits__body">
+										<div class="our-benefits__mark _icon-arrow"></div>
+										<div class="our-benefits__content benefits-content">
+											<div class="benefits-content__title">Єдині представники Євротону, Акваізолу та Керамеї
+											</div>
+
+										</div>
+									</div>
+									<div class="our-benefits__body">
+										<div class="our-benefits__mark _icon-arrow"></div>
+										<div class="our-benefits__content benefits-content">
+											<div class="benefits-content__title">Індивідуальні знижки
+											</div>
+
+										</div>
+									</div>
+									<div class="our-benefits__body">
+										<div class="our-benefits__mark _icon-arrow"></div>
+										<div class="our-benefits__content benefits-content">
+											<div class="benefits-content__title">Знижки для ЗСУ представників
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+			</section>
+			<section class="our-projects">
+				<div class="our-projects__container">
+					<h2 class="our-projects__title title">Проєкти</h2>
+					<h2 class="our-projects__sub-title sub-title">Наших клієнтів</h2>
+					<div class="our-projects__slider our-projects__swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="our-projects__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="our-projects__slide swiper-slide">
+								<div class="our-projects__image-ibg"><img src="@img/project/project1.jpg" alt=""></div>
+								<div class="our-projects__slide-content">
+									<!-- <h2 class="our-projects__slide-content-title">
+										Lorem ipsum dolor sit.
+									</h2>
+									<div class="our-projects__slide-content-description">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Eveniet, ratione.</div> -->
+								</div>
+							</div>
+							<div class="our-projects__slide swiper-slide">
+								<div class="our-projects__image-ibg"><img src="@img/project/project2.jpg" alt=""></div>
+								<div class="our-projects__slide-content">
+									<!-- <h2 class="our-projects__slide-content-title">
+										Lorem ipsum dolor sit.
+									</h2>
+									<div class="our-projects__slide-content-description">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Eveniet, ratione.</div> -->
+								</div>
+							</div>
+							<div class="our-projects__slide swiper-slide">
+								<div class="our-projects__image-ibg"><img src="@img/project/project3.jpg" alt=""></div>
+								<div class="our-projects__slide-content">
+									<!-- <h2 class="our-projects__slide-content-title">
+										Lorem ipsum dolor sit.
+									</h2>
+									<div class="our-projects__slide-content-description">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Eveniet, ratione.</div> -->
+								</div>
+							</div>
+							<div class="our-projects__slide swiper-slide">
+								<div class="our-projects__image-ibg"><img src="@img/project/project4.jpg" alt=""></div>
+								<div class="our-projects__slide-content">
+									<!-- <h2 class="our-projects__slide-content-title">
+										Lorem ipsum dolor sit.
+									</h2>
+									<div class="our-projects__slide-content-description">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Eveniet, ratione.</div> -->
+								</div>
+							</div>
+							<div class="our-projects__slide swiper-slide">
+								<div class="our-projects__image-ibg"><img src="@img/project/project5.jpg" alt=""></div>
+								<div class="our-projects__slide-content">
+									<!-- <h2 class="our-projects__slide-content-title">
+										Lorem ipsum dolor sit.
+									</h2>
+									<div class="our-projects__slide-content-description">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Eveniet, ratione.</div> -->
+								</div>
+							</div>
+							<div class="our-projects__slide swiper-slide">
+								<div class="our-projects__image-ibg"><img src="@img/project/project6.jpg" alt=""></div>
+								<div class="our-projects__slide-content">
+									<!-- <h2 class="our-projects__slide-content-title">
+										Lorem ipsum dolor sit.
+									</h2>
+									<div class="our-projects__slide-content-description">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Eveniet, ratione.</div> -->
+								</div>
+							</div>
+							<div class="our-projects__slide swiper-slide">
+								<div class="our-projects__image-ibg"><img src="@img/project/project7.jpg" alt=""></div>
+								<div class="our-projects__slide-content">
+									<!-- <h2 class="our-projects__slide-content-title">
+										Lorem ipsum dolor sit.
+									</h2>
+									<div class="our-projects__slide-content-description">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Eveniet, ratione.</div> -->
+								</div>
+							</div>
+							<div class="our-projects__slide swiper-slide">
+								<div class="our-projects__image-ibg"><img src="@img/project/project8.jpg" alt=""></div>
+								<div class="our-projects__slide-content">
+									<!-- <h2 class="our-projects__slide-content-title">
+										Lorem ipsum dolor sit.
+									</h2>
+									<div class="our-projects__slide-content-description">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Eveniet, ratione.</div> -->
+								</div>
+							</div>
+							<div class="our-projects__slide swiper-slide">
+								<div class="our-projects__image-ibg"><img src="@img/project/project9.jpg" alt=""></div>
+								<div class="our-projects__slide-content">
+									<!-- <h2 class="our-projects__slide-content-title">
+										Lorem ipsum dolor sit.
+									</h2>
+									<div class="our-projects__slide-content-description">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Eveniet, ratione.</div> -->
+								</div>
+							</div>
+						</div>
+						<!-- Якщо потрібна пагінація -->
+						<div class="swiper-pagination"></div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+						<button type="button" class="swiper-button__our-project swiper-button-prev _icon-arrow"></button>
+						<button type="button" class="swiper-button__our-project swiper-button-next _icon-arrow"></button>
+						<!-- </div> -->
+					</div>
+			</section>
+			<section class="form">
+				<div class="form__container">
+					<div class="form__content">
+						<h2 class="form__title title">Зв’яжіться з нами
+						</h2>
+						<!-- <h2 class="form__sub-title sub-title">Lorem ipsum dolor sit amet.</h2> -->
+						<div class="form__text">Ми допоможемо підібрати товар, що повністю підлягає вашим потребам, та дамо
+							персональну знижку
+						</div>
+					</div>
+					<div class="form__wrapper">
+						<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="main-form">
+							<input class="form-input" data-validate data-required type="text" name="name" id="name"
+								data-error="Треба заповнити всі поля" placeholder="Імʼя*" class="input-mail">
+							<input class="form-input" data-validate data-required type="number" name="phone" id="phone"
+								data-error="Треба заповнити всі поля" placeholder="Номер телефону*" class="input-phone">
+							<!-- <input data-required type="text" name="form[number]" data-error="Error" placeholder="Код товару"
+								class="input-number"> -->
+							<button type="submit" class="button-form button">Відправити</button>
+						</form>
+					</div>
+
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__body">
+						<h2 class="reviews__title title">Відгуки</h2>
+						<h2 class="reviews__sub-title sub-title">Наших клієнтів</h2>
+						<!-- Оболонка слайдера -->
+						<div class="reviews__slider reviews__swiper">
+							<!-- Частина слайдера, що рухається -->
+							<div class="reviews__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="reviews__slide swiper-slide">
+									<img class="swiper-slide__img" src="@img/quotes.svg" alt="quotes">
+									<div class="swiper-slide__text">Вибирали матеріал для паркану, персонал різні варіанти
+										порахував, порівняв, порадили, що найкраще для нас. Вибором задоволені!
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<img class="swiper-slide__img" src="@img/quotes.svg" alt="quotes">
+									<div class="swiper-slide__text">Великий асортимент! Знайшли товари, які ні в яких магазинах
+										раніше не бачили
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<img class="swiper-slide__img" src="@img/quotes.svg" alt="quotes">
+									<div class="swiper-slide__text">Купили цеглу на паркан чевроного кольору, але зрозуміли що
+										колір не підходить. В Камелоті без проблем поміняли на іншу
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<img class="swiper-slide__img" src="@img/quotes.svg" alt="quotes">
+									<div class="swiper-slide__text">Хочу подякувати за роботу працівників. Приємне спілкування,
+										досвідчені спеціалісти
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<img class="swiper-slide__img" src="@img/quotes.svg" alt="quotes">
+									<div class="swiper-slide__text">Дуже оперативно! Спішив закінчити ремонт до свят, вже не
+										сподівався встигнути, але в Камелоті частину товару дали з складу, іншу доставили за 2 дні
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<img class="swiper-slide__img" src="@img/quotes.svg" alt="quotes">
+									<div class="swiper-slide__text">Робітники допомагли з транспортом, загрузкою та розгрузкою
+										бруківки
+									</div>
+								</div>
+							</div>
+							<!-- Якщо потрібна пагінація -->
+							<div class="swiper-pagination"></div>
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="swiper-button-prev"></button>
+							<button type="button" class="swiper-button-next"></button>
+							<!-- Якщо потрібен скролбар -->
+							<div class="swiper-scrollbar"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_preloader.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

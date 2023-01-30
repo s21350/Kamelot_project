@@ -1,0 +1,33 @@
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"></button>
+			<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="main-form">
+				<input class="form-input" data-validate data-required type="text" name="name" id="name"
+					data-error="Треба заповнити всі поля" placeholder="Імʼя*" class="input-mail">
+				<input class="form-input" data-validate data-required type="number" name="phone" id="phone"
+					data-error="Треба заповнити всі поля" placeholder="Номер телефону*" class="input-phone">
+				<!-- <input data-required type="text" name="form[number]" data-error="Error" placeholder="Код товару"
+					class="input-number"> -->
+				<button type="submit" class="button-form button">Відправити</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="popup-catalog" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"></button>
+			<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="main-form">
+				<input class="form-input" data-validate data-required type="text" name="name" id="name"
+					data-error="Треба заповнити всі поля" placeholder="Імʼя*" class="input-mail">
+				<input class="form-input" data-validate data-required type="number" name="phone" id="phone"
+					data-error="Треба заповнити всі поля" placeholder="Номер телефону*" class="input-phone">
+				<input class="form-input" data-required type="text" name="product" data-error="Треба заповнити всі поля"
+					placeholder="Вкажіть назву товару*" class="input-number">
+				<button type="submit" class="button-form button">Відправити</button>
+			</form>
+		</div>
+	</div>
+</div>

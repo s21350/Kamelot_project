@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Контакти"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_popup.htm',{})
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="contact">
+            <div class="contact__container">
+               <!-- <h2 class="contact__sub-title sub-title">
+                  Контакти
+               </h2> -->
+               <div class="contact__content">
+                  <div class="contact__content-left-column">
+                     <div class="contact__work-time contact__card">
+                        <span class="icon-contact _icon-clock"></span>
+                        <h2> Працюємо:</h2>
+                        <span>пн-пт. 9:30-17:30</span>
+                        <span>сб. 10:00-14:00</span>
+                        <span> нд. вихідний</span>
+                     </div>
+                     <div class="contact__phone-number contact__card">
+                        <span class="icon-contact _icon-phone"></span>
+                        <div class="contact-phone">
+                           <!-- <img class="contact-phone__kyivstar" src="@img/contact/kyivstar.png" alt=""> -->
+                           <span><a href="tel:+380988560866">(098) 856-0-866</a></span>
+                        </div>
+                        <div class="contact-phone">
+                           <!-- <img class="contact-phone__vodafon" src="@img/contact/vodafone.png" alt=""> -->
+                           <span><a href="tel:+380668150989">(066) 815-09-89</a></span>
+                        </div>
+                     </div>
+                     <div class="contact__adress contact__card">
+                        <span class="icon-contact _icon-location"></span>
+                        <span> магазин "КАМЕЛОТ"</span>
+                        <span>Івано-Франківська область, </span>
+                        <span>с. Драгомирчани, вул. Стуса, 8</span>
+                        <span> (1 км від Івано-Франківська)</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="wrapper__contact-footer">
+                  <div class="contact__map" id="map">
+                     <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5247.2573369991005!2d24.639803000000004!3d48.884355000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x746871aec99a3142!2z0J_QnyDQmtCw0LzQtdC70L7Rgg!5e0!3m2!1sru!2sde!4v1674411120079!5m2!1sru!2sde"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                  <div class="contact__form">
+                     <form id="form" data-ajax action="files/sendmail/sendmail.php" method="POST" class="main-form">
+                        <input class="form-input" data-validate data-required type="text" name="name" id="name"
+                           data-error="Треба заповнити всі поля" placeholder="Імʼя" class="input-mail">
+                        <input class="form-input" data-validate data-required type="number" name="phone" id="phone"
+                           data-error="Треба заповнити всі поля" placeholder="Номер телефону" class="input-phone">
+                        <!-- <input data-required type="text" name="form[number]" data-error="Error" placeholder="Код товару"
+                           class="input-number"> -->
+                        <button type="submit" class="button-form button">зателефонуйте мені </button>
+                     </form>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_preloader.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

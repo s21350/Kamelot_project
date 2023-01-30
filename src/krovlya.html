@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"Покриття на дах" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_popup.htm',{})
+    @@include('html/_header.htm',{})
+    <main class="main-krovlya">
+      <div class="krovlya__container">
+        <marquee behavior="scroll" direction="left">Ціни та асортимент можуть відрізнятися, дізнайтеся деталі за
+          телефоном
+        </marquee>
+        <div class="bread-crumbs">
+          <ul class="bread-crumbs__items">
+            <li class="bread-crumbs__item">
+              <a href="catalog.html" class="bread-crumbs__link">Каталог товарів ></a>
+            </li>
+            <li class="bread-crumbs__item">Покриття на дах</li>
+          </ul>
+        </div>
+        <button type="button" id="open-filter" class="open-filter _icon-filter"></button>
+        <div class="krovlya__body">
+          <div id="krovlya-filter" class="krovlya-filter__wrapper">
+            <form class="krovlya__body-filter filter" id="filter-krovlya">
+              <div data-range class="filter-price">
+                <button id="close-filter__btn" class="close-filter__btn"></button>
+                <h2 class="filter-price__title filter-title">
+                  Роздрібна ціна
+                </h2>
+
+                <div class="filter-price__inputs">
+                  <input data-range-from="0" autocomplete="off" type="text" value="0" name="minPrice"
+                    class="filter-price__input" />
+                  <input data-range-to="1500" autocomplete="off" type="text" value="1500" name="maxPrice"
+                    class="filter-price__input" />
+                </div>
+                <div data-range-item id="range"></div>
+              </div>
+              <div data-spollers="992" class="filter-material filter">
+                <button data-spoller class="filter-material__title filter-title">
+                  Вид
+                </button>
+                <div class="filter-material__inputs">
+                  <div class="filter-material__checkbox">
+                    <input value="bitum" class="material-checkbox checkbox" type="checkbox" name="bitum" id="bitum" />
+                    <label for="bitum">Бітумна черепиця </label>
+                  </div>
+                  <div class="filter-material__checkbox">
+                    <input value="metal" class="material-checkbox checkbox" type="checkbox" name="metal" id="metal" />
+                    <label for="metal">Металочерепиця і профнастил
+                    </label>
+                  </div>
+                  <div class="filter-material__checkbox">
+                    <input value="komposit" class="material-checkbox checkbox" type="checkbox" name="komposit"
+                      id="komposit" />
+                    <label for="komposit">Композитна черепиця </label>
+                  </div>
+                  <div class="filter-material__checkbox">
+                    <input class="material-checkbox checkbox" type="checkbox" name="natur" id="natur" value="natur" />
+                    <label for="natur">Натуральна черепиця </label>
+                  </div>
+                  <div class="filter-material__checkbox">
+                    <input value="metaplast" class="material-checkbox checkbox checkbox" type="checkbox"
+                      name="metaplast" id="metaplast" />
+                    <label for="metaplast">Метапласт </label>
+                  </div>
+                </div>
+              </div>
+              <div data-spollers="992" class="filter-brand filter">
+                <button data-spoller class="filter-brand__title filter-title">
+                  Виробник
+                </button>
+                <div class="filter-brand__inputs">
+                  <div class="filter-brand__checkbox">
+                    <input class="brand-checkbox checkbox" type="checkbox" name="akvizol" value="akvizol"
+                      id="akvizol" />
+                    <label for="akvizol">Акваізол </label>
+                  </div>
+                  <div class="filter-brand__checkbox">
+                    <input class="brand-checkbox checkbox" type="checkbox" name="katepal" value="katepal"
+                      id="katepal" />
+                    <label for="katepal">Katepal
+                    </label>
+                  </div>
+                  <div class="filter-brand__checkbox">
+                    <input class="brand-checkbox checkbox" type="checkbox" name="icopal" value="icopal" id="icopal" />
+                    <label for="icopal">Ikopal</label>
+                  </div>
+                  <div class="filter-brand__checkbox">
+                    <input class="brand-checkbox checkbox" type="checkbox" name="ico" value="ico" id="ico" />
+                    <label for="ico">Ico</label>
+                  </div>
+                  <div class="filter-brand__checkbox">
+                    <input class="brand-checkbox checkbox checkbox" type="checkbox" name="certainteed"
+                      value="certainteed" id="certainteed" />
+                    <label for="certainteed">CertainTeed</label>
+                  </div>
+                </div>
+              </div>
+              <div data-spollers="992" class="filter-color filter">
+                <button data-spoller class="filter-color__title filter-title">
+                  Кольорова гамма
+                </button>
+                <div class="filter-color__inputs">
+                  <div class="filter-color__checkbox">
+                    <input class="color-checkbox checkbox" type="checkbox" name="color" id="red" value="red" />
+
+                    <label for="red">Червоний</label>
+                  </div>
+                  <div class="filter-color__checkbox">
+                    <input class="color-checkbox checkbox" type="checkbox" name="color" id="green" value="green" />
+
+                    <label for="green">Зелений </label>
+                  </div>
+                  <div class="filter-color__checkbox">
+                    <input class="color-checkbox checkbox" type="checkbox" name="color" id="brown" value="brown" />
+
+                    <label for="brown">Коричневий </label>
+                  </div>
+                  <div class="filter-color__checkbox">
+                    <input class="color-checkbox checkbox" type="checkbox" name="color" id="black" value="black" />
+
+                    <label for="black">Чорний</label>
+                  </div>
+                  <div class="filter-color__checkbox">
+                    <input class="color-checkbox checkbox" type="checkbox" name="color" id="blue" value="blue" />
+
+                    <label for="blue">Синій </label>
+                  </div>
+                  <div class="filter-color__checkbox">
+                    <input class="color-checkbox checkbox" type="checkbox" name="color" id="yellow" value="yellow" />
+
+                    <label for="yellow">Жовтий </label>
+                  </div>
+                </div>
+              </div>
+              <div class="close-filter" id="close-filter" type="submit" style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                  ">
+                <button type="submit" style="
+                      margin: 0 5px;
+                      width: 100%;
+                      background: #f62114;
+                      height: 30px;
+                      border-radius: 6px;
+                      color: #fff;
+                    ">
+                  Фільтрувати
+                </button>
+                <button class="clear-filters" type="reset" style="
+                      margin: 0 5px;
+                      width: 100%;
+                      background: #fff;
+                      height: 30px;
+                      border-radius: 6px;
+                      color: #1b1b1b;
+                      border: 1px solid #1b1b1b;
+                    ">
+                  Очистити
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="krovlya__body-items"></div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_preloader.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

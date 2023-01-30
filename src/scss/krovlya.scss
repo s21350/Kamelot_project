@@ -1,0 +1,321 @@
+.krovlya {
+   &__container {
+      color: #000000;
+      padding-top: 100px;
+   }
+
+   &__title {
+   }
+
+   &__body {
+      display: flex;
+   }
+
+   &__body-filter {
+      border-right: solid rem(2) #d8d8d8;
+      padding: rem(0) rem(15) rem(0) rem(0);
+      position: relative;
+
+      .noUi-horizontal {
+         height: 3px;
+      }
+      .noUi-target {
+         background-color: #000000;
+      }
+      .noUi-connect {
+         background-color: $secondColor;
+      }
+      .noUi-tooltip {
+      }
+      .noUi-horizontal .noUi-handle {
+         cursor: pointer;
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         background-color: $secondColor;
+         right: rem(-6);
+         top: rem(-3.5);
+      }
+
+      .noUi-handle::before {
+         content: "";
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+         width: 0.625rem;
+         height: 0.625rem;
+         background-color: $secondColor;
+      }
+   }
+}
+.krovlya-filter__wrapper {
+   position: relative;
+   @media (max-width: $tablet) {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      transform: translate(-110%);
+      transition: all 0.3s ease 0s;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      background-color: #f1f1f1;
+      padding: rem(0) rem(15) rem(0) rem(15);
+   }
+}
+.filter-open {
+   @media (max-width: $tablet) {
+      transition: all 0.3s ease 0s;
+      transform: translate(0%);
+   }
+}
+.open-filter {
+   display: none;
+   color: #ffffff;
+   font-size: rem(25);
+   @media (max-width: $tablet) {
+      display: block;
+      position: fixed;
+      left: rem(15);
+      top: rem(133);
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      background-color: $secondColor;
+   }
+}
+.close-filter__btn {
+   display: none;
+   @media (max-width: $tablet) {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 30px;
+      height: 30px;
+      &::before {
+         content: "";
+         position: absolute;
+         right: -2px;
+         top: 0px;
+         width: 30px;
+         height: rem(2);
+         transform: rotate(45deg);
+         background-color: #ffffff;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         right: -2px;
+         top: 0px;
+         width: 30px;
+         height: rem(2);
+         transform: rotate(135deg);
+         background-color: #ffffff;
+      }
+   }
+}
+
+.filter-price {
+   border-top: solid rem(2) #d8d8d8;
+   border-bottom: solid rem(2) #d8d8d8;
+   padding-bottom: 15px;
+   @media (max-width: $tablet) {
+      border-top: none;
+   }
+}
+.filter-price__inputs {
+   display: flex;
+   justify-content: space-between;
+   column-gap: rem(15);
+   margin-top: rem(20);
+   margin-bottom: rem(20);
+}
+.filter-price__input {
+   max-width: rem(110);
+   height: rem(30);
+   border: solid 1px;
+   border-radius: rem(5);
+   text-align: center;
+   outline: none;
+}
+.filter-material {
+   border-bottom: solid rem(2) #d8d8d8;
+
+   &__title {
+   }
+
+   &__inputs {
+      margin-left: rem(25);
+      margin-bottom: 20px;
+   }
+   &__checkbox {
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+}
+label {
+   width: 100%;
+   position: relative;
+   line-height: 140%;
+   cursor: pointer;
+   &::before {
+      position: absolute;
+      content: "";
+      width: rem(15);
+      height: rem(15);
+      border-radius: 2px;
+      border: solid rem(1);
+      left: rem(-24);
+      top: rem(0);
+   }
+   &::after {
+      position: absolute;
+      content: "";
+      width: rem(7);
+      height: rem(7);
+      border-radius: 2px;
+      opacity: 0;
+      left: -20px;
+      top: 4px;
+      background-color: $secondColor;
+      transition: all 0.3s ease 0s;
+   }
+}
+.checkbox {
+   display: none;
+   &:checked + label::after {
+      opacity: 1;
+   }
+}
+.filter-brand {
+   border-bottom: solid rem(2) #d8d8d8;
+   margin-bottom: rem(20);
+   &__title {
+   }
+
+   &__inputs {
+      margin-left: rem(25);
+      margin-bottom: 20px;
+   }
+
+   &__checkbox {
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+}
+.filter-color {
+   border-bottom: solid rem(2) #d8d8d8;
+   margin-bottom: rem(20);
+   &__title {
+   }
+
+   &__inputs {
+      margin-left: rem(25);
+      margin-bottom: 20px;
+   }
+
+   &__checkbox {
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+}
+.filter-title {
+   @media (max-width: $tablet) {
+      width: 100%;
+      text-align: left;
+   }
+}
+.color-checkbox {
+}
+
+.krovlya {
+   &__body-items {
+      display: grid;
+      row-gap: rem(30);
+      width: 100%;
+      grid-template-columns: repeat(3, 300px);
+      justify-content: space-around;
+      @media (max-width: em(1220)) {
+         grid-template-columns: repeat(2, 300px);
+      }
+      @media (max-width: em(690)) {
+         grid-template-columns: repeat(1, 300px);
+      }
+   }
+
+   &__body-item {
+      height: rem(400);
+   }
+}
+.card-item {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-color: #ffffff;
+   border: solid 2px #f1f1f1;
+   color: #000000;
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+   @media (any-hover: hover) {
+      &:hover {
+         transition: all 0.3s ease 0s;
+         box-shadow: 0 0 8px 4px #f1f1f1;
+         transform: scale(1.05);
+      }
+   }
+   // padding: 10px;
+
+   &__image-ibg {
+      padding-bottom: 80%;
+      margin-bottom: rem(30);
+   }
+   &__content {
+      padding: rem(0) rem(10) rem(15) rem(10);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__title {
+      @include adaptiveValue("font-size", 20, 14);
+      font-weight: 400;
+      letter-spacing: rem(0.4);
+      margin-bottom: rem(20);
+   }
+
+   &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__price {
+      font-weight: 700;
+      font-size: 25px;
+   }
+
+   &__button {
+      min-width: 100px;
+      height: 40px;
+      padding: rem(5) rem(5) rem(5) rem(5);
+   }
+}
+.button {
+}
+.main-krovlya {
+   padding-bottom: rem(30);
+   background-color: #f1f1f1;
+}
+marquee {
+   color: $secondColor;
+   font-size: 18px;
+   margin-top: -20px;
+   margin-bottom: 10px;
+}

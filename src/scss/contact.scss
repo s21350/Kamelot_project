@@ -1,0 +1,138 @@
+.contact {
+   padding-top: 100px;
+   padding-bottom: 30px;
+   background-color: $darkGrey;
+   &__container {
+   }
+
+   &__content {
+   }
+
+   &__content-left-column {
+      display: flex;
+      justify-content: space-around;
+      @include adaptiveValue("padding-top", 80, 30);
+      @include adaptiveValue("margin-bottom", 60, 20);
+      @media (max-width: em(940)) {
+         flex-direction: column;
+         align-items: center;
+         row-gap: rem(30);
+      }
+   }
+
+   &__work-time {
+      display: flex;
+      flex-direction: column;
+      h2 {
+         font-size: 18px;
+         margin-bottom: 15px;
+      }
+      span {
+         &:not(:last-child) {
+            margin-bottom: 10px;
+         }
+      }
+      .icon-contact {
+      }
+   }
+
+   &__phone-number {
+      .icon-contact {
+      }
+      span {
+         &:not(:last-child) {
+            margin-bottom: 10px;
+         }
+      }
+   }
+
+   &__adress {
+      .icon-contact {
+      }
+      span {
+         &:not(:last-child) {
+            margin-bottom: 10px;
+         }
+      }
+   }
+
+   &__map {
+   }
+
+   &__form {
+   }
+}
+.icon-contact {
+   width: rem(60);
+   height: rem(60);
+   background-color: $secondColor;
+   border-radius: 50%;
+   color: #ffffff;
+
+   position: relative;
+   &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: rem(25);
+      transform: translate(-50%, -50%);
+   }
+}
+.contact-phone {
+   &:not(:last-child) {
+      margin-top: 25px;
+      margin-bottom: 10px;
+   }
+}
+.wrapper {
+   &__contact-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      column-gap: 30px;
+      @media (max-width: em(940)) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}
+.contact__card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 0 1 30%;
+   background-color: #f1f1f1;
+   @include adaptiveValue("font-size", 18, 14);
+   padding: 20px;
+   transition: all 0.3s ease 0s;
+   border-radius: rem(12);
+   @media (any-hover: hover) {
+      &:hover {
+         transform: scale(1.1);
+         transition: all 0.3s ease 0s;
+      }
+   }
+   @media (max-width: em(940)) {
+      min-width: 300px;
+   }
+   img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 25px;
+   }
+}
+
+.map {
+   width: 100%;
+   min-width: 600px;
+   height: 400px;
+   @media (max-width: $pc) {
+      min-width: 500px;
+   }
+   @media (max-width: em(940)) {
+      margin-bottom: 30px;
+   }
+   @media (max-width: em(570)) {
+      min-width: 290px;
+   }
+}

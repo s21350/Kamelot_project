@@ -1,0 +1,58 @@
+// Заголовки, загальні БЕМ блоки та інше...
+///Главная страница
+.button {
+   background-color: $secondColor;
+   min-width: rem(200);
+   // height: rem(50);
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: rem(0.4);
+   cursor: pointer;
+   padding: rem(15);
+   transition: all 0.3s ease 0s;
+   color: #ffffff;
+   @media (any-hover: hover) {
+      &:hover {
+         background-color: $hoverColor;
+      }
+   }
+}
+.title {
+   font-weight: 800;
+   @include adaptiveValue("font-size", 30, 18);
+   text-transform: uppercase;
+   color: $secondColor;
+   text-align: center;
+   letter-spacing: rem(0.4);
+   margin-bottom: rem(20);
+}
+.sub-title {
+   text-align: center;
+   font-weight: 800;
+   @include adaptiveValue("font-size", 30, 20);
+   text-transform: uppercase;
+   letter-spacing: rem(0.4);
+   margin-bottom: rem(30);
+}
+
+//====================================================================================
+//
+.filter-title {
+   @include adaptiveValue("font-size", 22, 16);
+   font-weight: 700;
+   line-height: 140%;
+   letter-spacing: rem(0.4);
+   margin-top: rem(15);
+   margin-bottom: rem(15);
+}
+.bread-crumbs {
+   &__items {
+      display: flex;
+      margin-bottom: rem(50);
+   }
+   &__item {
+      &:not(:last-child) {
+         margin-right: rem(10);
+      }
+   }
+}
